@@ -1,0 +1,227 @@
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 288px;
+  height: 630px;
+  @include tablet {
+    width: 353px;
+    height: 675px;
+  }
+
+  @include desktop {
+    width: 395px;
+  }
+}
+
+.card__item--weather {
+  background-color: #00dd73;
+  width: 288px;
+  height: 630px;
+
+  @include tablet {
+    width: 353px;
+    height: 675px;
+  }
+
+  @include desktop {
+    width: 395px;
+  }
+}
+
+.card-image__wrapper {
+  position: relative;
+
+  height: 395px;
+  width: 288px;
+
+  @include tablet {
+    width: 353px;
+  }
+
+  @include desktop {
+    width: 395px;
+  }
+}
+.card__image {
+  filter: brightness(50%);
+  display: block;
+  width: 100%;
+
+  @include desktop {
+    width: 395px;
+  }
+}
+.card-jobsearching {
+  display: block;
+  width: 112px;
+  height: 24px;
+
+  background-color: rgba(68, 64, 247, 0.7);
+
+  border-radius: 0px 4px 4px 0px;
+
+  text-align: center;
+  padding-top: 4px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: var(--white-color);
+
+  position: absolute;
+  left: 0;
+  top: 44px;
+}
+.card-already__read {
+  display: block;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #00dd73;
+
+  position: absolute;
+  right: 36px;
+  top: 14px;
+}
+
+.card-already__read::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/svg/heart_svg.svg');
+
+  position: absolute;
+  right: -24px;
+  top: 0;
+}
+
+.card__btn {
+  display: flex;
+  justify-content: center;
+
+  width: 126px;
+  height: 28px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  align-items: center;
+
+  background: var(--white-color);
+  border: none;
+  border-radius: 20px;
+
+  position: absolute;
+  right: 8px;
+  bottom: 12px;
+}
+
+.card__btn::after {
+  content: '';
+  display: flex;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url('../images/svg/heart_svg.svg');
+
+  margin-left: 6px;
+}
+
+.card__title {
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+
+  color: var(--dark-color);
+  margin-top: 20px;
+
+  font-size: 24px;
+  line-height: 33px;
+
+  @include tablet {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  @include desktop {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+.card__article {
+  margin-top: 20px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: var(--dark-color);
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+
+.card__info--date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+
+  color: var(--grey-color);
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.card__info--readmore {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: var(--components-color);
+
+  border: none;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

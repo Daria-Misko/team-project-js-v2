@@ -1,2 +1,23 @@
+@import './utilits/variables';
+@import './utilits/mixins';
+
+@import './components/container';
+@import './components/article-card';
+@import './components/negative-search';
+@import './components/section';
+@import './components/calendar';
+
 @import './common';
-@import './example';
+
+@import './base/common';
+@import './base/reset';
+
+@import './layouts/header';
+@import './layouts/home-page-categories';
+@import './layouts/_weather.scss';
+@import './layouts/home-page';
+@import './layouts/pagination';
+@import './layouts/burger-menu';
+@import './layouts/footer';
+@import './layouts/read';
+@import './layouts/favorite';

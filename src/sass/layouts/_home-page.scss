@@ -1,0 +1,16 @@
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 28px;
+
+  @include tablet {
+      gap: 30px;
+  }
+
+  @include desktop {
+      gap: 32px;
+    
+  }
+}
+

@@ -1,1 +1,32 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Roboto&display=swap');
+
+body {
+	font-family: Monrope, sans-serif;
+	font-weight: 400;
+	background: var(--bg-color);
+	margin: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
